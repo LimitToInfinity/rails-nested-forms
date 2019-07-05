@@ -2,7 +2,7 @@
 <ul>
   <% @artists.each do |artist| %>
     <li>
-      <p><%= artist.name %></p>
+      <p><%= link_to artist.name, artist %></p>
       <ul>
         <% artist.paintings.each do |painting| %>
           <li><%= painting.title %></li>
